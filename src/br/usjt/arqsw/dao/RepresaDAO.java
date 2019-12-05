@@ -49,9 +49,9 @@ public class RepresaDAO {
 	@SuppressWarnings("unchecked")
 	public List<Represa> listar(String chave) {
 		
-		//String jpql = "select r from Represa r where nome like '%" + chave + "%'";
+		String jpql = "select r from Represa r where nome like '%" + chave + "%'";
 		
-		String jpql = "select r from Represa r where r.nome = '" + chave + "'";
+		//String jpql = "select r from Represa r where r.nome = '" + chave + "'";
 		
 		Query query = manager.createQuery(jpql);
 
